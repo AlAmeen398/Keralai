@@ -83,7 +83,7 @@ function WhyKerala() {
                         {[
                             { title: 'Literacy for All', text: 'Equitable AI education that empowers every citizen; position Kerala as a global model.', image: img1, route: '/literacy' },
                             { title: 'Creators Not Consumers', text: 'Enable Keralites to innovate and build AI-driven solutions.', image: img2, route: '/creaters' },
-                            { title: 'Knowledge as Public Good', text: 'Open, multilingual, grassroots-first approaches where learners become teachers.', image: img3, route: '/knowldege' }
+                            { title: 'Knowledge as Public Good', text: 'Open, multilingual, grassroots-first approaches where learners become...', image: img3, route: '/knowldege' }
                         ].map((item, idx) => (
                             <Col md={4} key={idx}>
                                 <Link to={item.route} className="text-decoration-none text-body">

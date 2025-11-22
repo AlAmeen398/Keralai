@@ -5,7 +5,7 @@ import Hero from '../components/Hero'
 import { Badge, Button, Card, Col, Container, Row } from 'react-bootstrap'
 import WhyKerala from '../components/WhyKerala';
 import Challenges from '../components/Challenges';
-import FullscreenWrapper from '../components/FullscreenWrapper';
+// FullscreenWrapper removed — using direct section rendering
 import Approach from '../components/Approach';
 import AudienceGrid from '../components/AudienceGrid';
 import slide1 from '../images/image2.jpg';
@@ -133,10 +133,8 @@ function Home() {
             <main>
 
                 {/* excluded from animation */}
-                                <WhyKerala />
-                                <FullscreenWrapper>
-                                    <Challenges />
-                                </FullscreenWrapper>
+                <WhyKerala />
+                <Challenges />
                 {/* Approach and Audience grid (hero wrapper removed) */}
                 <div ref={heroRef} style={{ display: 'none' }} />
                 <Approach />

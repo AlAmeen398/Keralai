@@ -3,9 +3,9 @@ import {Button, Col, Container, Row } from 'react-bootstrap'
 import CreepyButton from './CreepyButton'
 import gsap from 'gsap';
 import Carousel from 'react-bootstrap/Carousel';
-import slide1 from '../images/pexels-cottonbro-6153354.jpg';
+import slide1 from '../images/image12.jpg';
 import slide2 from '../images/pexels-tara-winstead-8386426.jpg';
-import slide3 from '../images/pexels-thisisengineering-3861976.jpg';
+import slide3 from '../images/image1.jpg';
 
 
 function Hero({ onOpenPartner }) {

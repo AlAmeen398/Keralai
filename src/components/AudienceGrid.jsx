@@ -17,7 +17,7 @@ function AudienceGrid() {
 
     const audiences = [
         { id: 1, title: 'Kutty Makers', text: 'Pattern recognition games, Teachable Machine, Scratch — introduce foundational AI concepts.', image: aud1, route: '/kutty-makers' },
-        { id: 2, title: 'Young Makers', text: 'Study jams, hackathons, GenAI projects, Kerala-specific datasets and peer learning.', image: aud2, route: '/young-makers' },
+        { id: 2, title: 'Young Makers', text: 'Study jams, hackathons, GenAI projects, Kerala-specific datasets and peer learning things.', image: aud2, route: '/young-makers' },
         { id: 3, title: 'Friends of the Movement', text: 'Educators, parents, elders: identify misinformation, deepfakes and practical AI impacts.', image: aud3, route: '/friends-movement' }
     ]
 

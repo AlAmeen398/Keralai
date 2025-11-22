@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { Container } from 'react-bootstrap'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import bgImage from '../images/pexels-thisisengineering-3861976.jpg'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -45,13 +46,20 @@ function Challenges() {
 
     return (
         <>
-            <section ref={sectionRef} className=" py-5 border-top mb-5"  style={{backgroundColor:'rgba(144, 206, 245, 1)'}}>
+            <section
+                ref={sectionRef}
+                className=" py-5 border-top mb-5"
+                style={{
+                    // Parallax-like fixed background image with a subtle white overlay for readability
+                    background: `url(${bgImage}) center/cover fixed no-repeat`,
+                }}
+            >
                 <Container >
                     <div ref={titleRef}>
-                        <h3 as="h3">The Challenge</h3>
+                        <h3 as="h3" className='text-light'>The Challenge</h3>
                     </div>
 
-                    <ul style={{ marginTop: "15px" }}>
+                    <ul style={{ marginTop: "15px", color:'white' }}>
                         {[
                             "Students graduating without AI skills that will define future careers.",
                             "Rapid workplace integration of AI creating job disruptions, especially for freshers.",
