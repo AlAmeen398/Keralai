@@ -38,7 +38,7 @@ export default function YoungMakers() {
   return (
     <section className="py-5 mt-5" ref={root}>
       <Container>
-        <Row className="align-items-center mb-4">
+        <Row className="align-items-center mb-4 mt-5">
           <Col md={8}>
             <h1 className="enter">Empowering Young Adults with AI</h1>
             <p className="lead enter">Unlock creativity, accelerate your skills, and build a future-proof career with the power of Artificial Intelligence — designed for today’s rising generation.</p>

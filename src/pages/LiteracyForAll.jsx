@@ -18,7 +18,7 @@ function LiteracyForAll(){
   return (
     <main className="py-5 mt-5">
       <Container ref={ref}>
-        <Row className="align-items-center g-4">
+        <Row className="align-items-center g-4 mt-2">
           <Col md={6}>
             <h1 className="enter">Literacy for All — Equitable AI Education</h1>
             <p className="lead enter">Equitable AI education that empowers every citizen to understand and apply AI responsibly. As Kerala pioneered digital literacy before, we can position ourselves as a global model for AI education rooted in social responsibility and community well-being.</p>
@@ -42,7 +42,7 @@ function LiteracyForAll(){
               </ul>
             </div>
 
-            <div className="mt-3 enter d-flex align-items-center gap-2">
+            <div className="mt- enter d-flex align-items-center gap-2">
               <CreepyButton className="me-2" onClick={() => toast.success('We will Connect You Soon')}>Get Involved</CreepyButton>
               <Button variant="outline-primary" onClick={()=>toast.error('Please try After Sometime')}>Resources</Button>
             </div>

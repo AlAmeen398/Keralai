@@ -113,7 +113,7 @@ function KuttyMakers() {
   return (
     <section className="py-5 mt-5" ref={rootRef}>
       <Container>
-        <Row className="align-items-center mb-4">
+        <Row className="align-items-center mb-4 mt-4">
           <Col md={8}>
             <h1 className="enter">AI for Young Innovators </h1>
             <p className="lead enter">Learn, create, and explore the world of Artificial Intelligence — even if you’re just getting started.</p>

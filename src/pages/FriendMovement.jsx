@@ -38,7 +38,7 @@ export default function FriendMovement() {
   return (
     <section className="py-5 mt-5" ref={root}>
       <Container>
-        <Row className="align-items-center mb-4">
+        <Row className="align-items-center mb-4 mt-4">
           <Col md={7} className="fm-animate">
             <h1 className="enter">Friends of the Movement</h1>
             <p className="lead">Educators • Professionals • Parents • Elders • Community Leaders</p>
