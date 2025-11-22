@@ -59,7 +59,7 @@ function Challenges() {
                         <h3 as="h3" className='text-light'>The Challenge</h3>
                     </div>
 
-                    <ul style={{ marginTop: "15px", color:'white' }}>
+                    <ul style={{ marginTop: "15px", color: 'white' }}>
                         {[
                             "Students graduating without AI skills that will define future careers.",
                             "Rapid workplace integration of AI creating job disruptions, especially for freshers.",

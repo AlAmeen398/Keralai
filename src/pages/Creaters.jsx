@@ -28,7 +28,7 @@ function Creaters() {
   return (
     <section className="py-5 mt-5" ref={sectionRef}>
       <Container>
-        <Row className="mb-4">
+        <Row className="mb-4 mt-3">
           <Col>
             <h1 className="enter">Creators, Not Just Consumers</h1>
             <p className="lead enter">Enabling Keralites to innovate and build AI-driven solutions — not just use them. We support learners, makers, and communities to co-design practical AI that solves local challenges while protecting dignity and privacy.</p>
@@ -62,7 +62,7 @@ function Creaters() {
         <Row className="mt-4">
           <Col className="enter">
             <Button as="a" href="/support" variant="primary" className="me-2">Get Involved</Button>
-             <CreepyButton href="/creaters" className="me-2" onClick={() => toast.success('We will Connect You Soon')}>See Workshops</CreepyButton>
+            <CreepyButton href="/creaters" className="me-2" onClick={() => toast.success('We will Connect You Soon')}>See Workshops</CreepyButton>
           </Col>
         </Row>
       </Container>

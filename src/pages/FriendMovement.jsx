@@ -82,7 +82,7 @@ export default function FriendMovement() {
           </Col>
 
           <Col md={5} className="text-center fm-animate">
-            <img ref={imgRef} src={fmImg} alt="Community workshop" className="img-fluid rounded shadow-sm" style={{maxHeight:420, objectFit:'cover'}} />
+            <img ref={imgRef} src={fmImg} alt="Community workshop" className="img-fluid rounded shadow-sm" style={{ maxHeight: 420, objectFit: 'cover' }} />
           </Col>
         </Row>
 

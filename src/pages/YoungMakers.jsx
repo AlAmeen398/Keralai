@@ -50,7 +50,7 @@ export default function YoungMakers() {
           </Col>
 
           <Col md={4} className="text-center">
-            <div style={{maxWidth:320, margin:'0 auto'}}>
+            <div style={{ maxWidth: 320, margin: '0 auto' }}>
               <img ref={heroImg} src={ymImg} alt="Young adults learning AI" className="img-fluid rounded shadow-sm" />
             </div>
           </Col>

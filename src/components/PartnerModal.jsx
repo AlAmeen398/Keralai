@@ -17,26 +17,26 @@ function PartnerModal({ show: propShow, onHide: propOnHide }) {
         try {
             // example POST - replace with real endpoint
             await axios.post('/api/partners', form);
-                // show toast on success
+            // show toast on success
+            toast.success('Submitted successfully');
+            setStatus({ success: true });
+            setForm({ name: "", type: "", email: "" });
+            // close the modal (either parent-controlled or internal)
+            try { onHide() } catch (e) { /* ignore */ }
+        } catch (err) {
+            // If the server returns 404, treat as success (suppress the 404 error) and show a success toast
+            const statusCode = err?.response?.status;
+            if (statusCode === 404) {
                 toast.success('Submitted successfully');
                 setStatus({ success: true });
                 setForm({ name: "", type: "", email: "" });
-                    // close the modal (either parent-controlled or internal)
-                    try { onHide() } catch (e) { /* ignore */ }
-        } catch (err) {
-                // If the server returns 404, treat as success (suppress the 404 error) and show a success toast
-                const statusCode = err?.response?.status;
-                if (statusCode === 404) {
-                    toast.success('Submitted successfully');
-                    setStatus({ success: true });
-                    setForm({ name: "", type: "", email: "" });
-                    try { onHide() } catch (e) { /* ignore */ }
-                    return;
-                }
+                try { onHide() } catch (e) { /* ignore */ }
+                return;
+            }
 
-                const message = err?.response?.data?.message || err?.message || 'Failed to submit';
-                setStatus({ error: message });
-                toast.error(message);
+            const message = err?.response?.data?.message || err?.message || 'Failed to submit';
+            setStatus({ error: message });
+            toast.error(message);
         }
     };
     return (

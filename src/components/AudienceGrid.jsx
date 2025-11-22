@@ -41,7 +41,7 @@ function AudienceGrid() {
         <>
             <section className="py-5 ">
                 <Container>
-                   
+
                     <h3 className=''>Who, What, Why, How</h3>
                     <Row className="mt-3">
                         {audiences.map((item, idx) => (

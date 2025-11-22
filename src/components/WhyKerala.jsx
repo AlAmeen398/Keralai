@@ -62,7 +62,7 @@ function WhyKerala() {
         <>
             <section id="why" className="py-5 " ref={sectionRef}>
                 <Container className='mt-5'>
-                    
+
                     <div className="d-flex align-items-center gap-3 ">
                         <h2 as="h2" className="mb-0"> Why Kerala needs AI literacy now?</h2>
 

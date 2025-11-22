@@ -26,7 +26,7 @@ export default function CreepyButton({ onClick, children, className = '' }) {
   const resetEyes = () => setEyeCoords({ x: 0, y: 0 });
 
   const pupilStyle = {
-    transform: `translate(${ -50 + eyeCoords.x * 28 }%, ${ -50 + eyeCoords.y * 28 }%)`
+    transform: `translate(${-50 + eyeCoords.x * 28}%, ${-50 + eyeCoords.y * 28}%)`
   };
 
   return (

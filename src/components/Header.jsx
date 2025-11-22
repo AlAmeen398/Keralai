@@ -51,7 +51,7 @@ function Header() {
         <header
             className="site-header  "
             style={{
-                
+
                 position: isAtTop ? 'absolute' : 'fixed',
                 transform: visible ? 'translateY(0)' : 'translateY(-110%)',
                 transition: 'transform 220ms ease',
@@ -71,7 +71,7 @@ function Header() {
                     <a className="d-flex align-items-center text-decoration-none brand" href="/">
                         <img src={image} alt="AI Kerala" className="logo-img" width={150} height={68} style={{ borderRadius: 8 }} />
                         <div className="ms-3 d-none d-md-block">
-                            <div className="h1 mb-0">KERL<span style={{color:'#2559adff'}}>AI</span></div>
+                            <div className="h1 mb-0">KERL<span style={{ color: '#2559adff' }}>AI</span></div>
                             <div className="small muted text-black">Empowering ideas with AI</div>
                         </div>
                     </a>
@@ -100,10 +100,10 @@ function Header() {
 
                     <div className="d-flex align-items-center gap-2">
                         <div className="d-none d-md-flex align-items-center gap-2 social-icons">
-                            <a className="text-muted" href="https://www.facebook.com/" target='_blank' aria-label="Facebook"><i className="fa-brands fa-facebook" style={{color:'#075ef2'}} /></a>
-                            <a className="text-muted" href="https://www.instagram.com/" target='_blank' aria-label="Instagram"><i className="fa-brands fa-instagram" style={{color:'red'}} /></a>
-                            <a className="text-muted" href="https://github.com/" aria-label="Github"><i className="fa-brands fa-github" style={{color:'#0f0f0fff'}} /></a>
-                            <a className="text-muted" href="https://web.telegram.org/a/" aria-label="Telegram"><i className="fa-brands fa-telegram" style={{color:'#4579d1ff'}}/></a>
+                            <a className="text-muted" href="https://www.facebook.com/" target='_blank' aria-label="Facebook"><i className="fa-brands fa-facebook" style={{ color: '#075ef2' }} /></a>
+                            <a className="text-muted" href="https://www.instagram.com/" target='_blank' aria-label="Instagram"><i className="fa-brands fa-instagram" style={{ color: 'red' }} /></a>
+                            <a className="text-muted" href="https://github.com/" aria-label="Github"><i className="fa-brands fa-github" style={{ color: '#0f0f0fff' }} /></a>
+                            <a className="text-muted" href="https://web.telegram.org/a/" aria-label="Telegram"><i className="fa-brands fa-telegram" style={{ color: '#4579d1ff' }} /></a>
                         </div>
 
                         <a className="btn btn-outline-primary d-none d-md-inline-block" href="/signin">Sign in</a>
@@ -115,7 +115,7 @@ function Header() {
                     </div>
                 </div>
 
-                
+
             </div>
             <style>{`/* Get Started button hover + focus styles (scoped to header) */
                 .site-header .get-started {

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import {Button, Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import CreepyButton from './CreepyButton'
 import gsap from 'gsap';
 import Carousel from 'react-bootstrap/Carousel';
@@ -11,7 +11,7 @@ import slide3 from '../images/image1.jpg';
 function Hero({ onOpenPartner }) {
     const heroRef = useRef(null)
     const textRef = useRef(null);
-    
+
 
     useEffect(() => {
         const tl = gsap.timeline({
@@ -30,14 +30,14 @@ function Hero({ onOpenPartner }) {
             ease: "power3.out"
         });
 
-        
+
 
     }, [])
     return (
         <>
             <header ref={heroRef} className="bg-light  border-bottom hero-fullscreen">
 
-                <Container fluid style={{padding:'0'}}>
+                <Container fluid style={{ padding: '0' }}>
                     <div className='carousel-wrapper'>
                         <Carousel fade>
                             <Carousel.Item>
@@ -65,12 +65,12 @@ function Hero({ onOpenPartner }) {
                                         <Button variant="outline-primary" onClick={() => onOpenPartner && onOpenPartner()}>Partner With Us</Button>
                                     </div>
                                 </Col>
-                               
+
                             </Row>
                         </div>
                     </div>
                 </Container>
-                
+
             </header>
         </>
     )

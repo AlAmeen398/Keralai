@@ -80,7 +80,7 @@ function Approach() {
     >
       <Container>
         <div ref={titleRef} >
-          <h3 style={{color:'white'}}>Our Approach — Head, Hand, Heart</h3>
+          <h3 style={{ color: 'white' }}>Our Approach — Head, Hand, Heart</h3>
         </div>
 
         <Row className="mt-2 approach-cards g-2 ">

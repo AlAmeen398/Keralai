@@ -26,7 +26,7 @@ function Knowledge() {
   return (
     <section className="py-5 mt-5" ref={sectionRef}>
       <Container>
-        <Row className="mb-3">
+        <Row className="mb-3 mt-3">
           <Col>
             <h1 className="enter">Knowledge as a Public Good</h1>
             <p className="lead enter">Making AI knowledge a public good means ensuring that the methods, models, datasets, curricula and teaching practices are openly available, multilingual, and governed by communities — so every person can learn, adapt and contribute.</p>

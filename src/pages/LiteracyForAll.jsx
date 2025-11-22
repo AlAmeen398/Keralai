@@ -5,15 +5,15 @@ import heroImg from '../images/pexels-thisisengineering-3861976.jpg'
 import CreepyButton from '../components/CreepyButton'
 import { toast } from 'react-toastify'
 
-function LiteracyForAll(){
+function LiteracyForAll() {
   const ref = useRef(null)
 
-  useEffect(()=>{
-    const ctx = gsap.context(()=>{
-      gsap.from(ref.current.querySelectorAll('.enter'), { y: 18, opacity:0, stagger:0.12, duration:0.6, ease:'power3.out' })
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(ref.current.querySelectorAll('.enter'), { y: 18, opacity: 0, stagger: 0.12, duration: 0.6, ease: 'power3.out' })
     }, ref)
-    return ()=> ctx.revert()
-  },[])
+    return () => ctx.revert()
+  }, [])
 
   return (
     <main className="py-5 mt-5">
@@ -44,13 +44,13 @@ function LiteracyForAll(){
 
             <div className="mt- enter d-flex align-items-center gap-2">
               <CreepyButton className="me-2" onClick={() => toast.success('We will Connect You Soon')}>Get Involved</CreepyButton>
-              <Button variant="outline-primary" onClick={()=>toast.error('Please try After Sometime')}>Resources</Button>
+              <Button variant="outline-primary" onClick={() => toast.error('Please try After Sometime')}>Resources</Button>
             </div>
           </Col>
 
           <Col md={6}>
             <div className="enter">
-              <img src={heroImg} alt="AI learning" style={{ width:'100%', borderRadius:12, objectFit:'cover', maxHeight:420 }} />
+              <img src={heroImg} alt="AI learning" style={{ width: '100%', borderRadius: 12, objectFit: 'cover', maxHeight: 420 }} />
             </div>
           </Col>
         </Row>
