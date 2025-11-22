@@ -26,16 +26,16 @@ function Footer() {
                     <Col md={4} className="text-end">
                         <div className="social-icons d-flex justify-content-end gap-3">
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                <i className="fa-brands fa-facebook fa-beat-fade fa-xl" style={{ color: "#0c4ab6" }} />
+                                <i className="fa-brands fa-facebook  fa-xl" style={{ color: "#0c4ab6" }} />
                             </a>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <i className="fa-brands fa-instagram fa-beat-fade fa-xl" style={{ color: "#d62976" }} />
+                                <i className="fa-brands fa-instagram  fa-xl" style={{ color: "#d62976" }} />
                             </a>
                             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                <i className="fa-brands fa-github fa-beat-fade fa-xl" style={{ color: "#0e0e0fff" }} />
+                                <i className="fa-brands fa-github  fa-xl" style={{ color: "#0e0e0fff" }} />
                             </a>
                             <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                                <i className="fa-brands fa-telegram fa-beat-fade fa-xl" style={{ color: "#0088cc" }} />
+                                <i className="fa-brands fa-telegram  fa-xl" style={{ color: "#0088cc" }} />
                             </a>
                         </div>
                     </Col>
