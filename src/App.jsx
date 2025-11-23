@@ -12,6 +12,7 @@ import YoungMakers from "./pages/YoungMakers"
 import FriendMovement from "./pages/FriendMovement"
 import ParnterWithUs from "./pages/ParnterWithUs"
 import SignIn from "./pages/SignIn"
+import GetStarted from "./pages/GetStarted"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/get-started" element={<GetStarted/>} />
         <Route path="/literacy" element={<LiteracyForAll />} />
         <Route path="/creaters" element={<Creaters />} />
         <Route path="/knowldege" element={<Knowledge />} />
