@@ -13,37 +13,37 @@ export default function GetStarted() {
         bgImageAlt="AI Background"
         strength={400}
       >
-        <div style={{ minHeight: '75vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: '#fff', textAlign: 'center', padding: '3rem', backgroundColor: 'rgba(0,0,0,0.15)'}}> 
+        <div className="gs-hero d-flex">
+          <div className="hero-inner container text-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="display-4 fw-bold text-white mb-3"
+            >
+              Get Started With <span className="text-primary">AI</span>
+            </motion.h1>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="display-4 fw-bold"
-            style={{ textShadow: '0 6px 18px rgba(0,0,0,0.45)', color:'white' }}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 1 }}
+              className="lead text-white-75 mx-auto"
+              style={{ maxWidth: 720 }}
+            >
+              Learn, experiment, and build AI projects — step-by-step, beginner-friendly, and fully hands-on.
+            </motion.p>
 
-          >
-            Get Started With <span style={{ color: '#93c5fd' }}>AI</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 1 }}
-            style={{ maxWidth: 720, fontSize: '1.125rem', marginTop: '1rem', opacity: 0.95 }}
-          >
-            Learn, experiment, and build AI projects — step-by-step, beginner-friendly, and fully hands-on.
-          </motion.p>
-
-          <motion.div
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
-            style={{ marginTop: '2.5rem', display: 'flex', gap: '1.5rem', color: '#cfe8ff' }}
-          >
-            <Cpu size={40} color="#0d6efd" />
-            <Sparkles size={40} color="#0d6efd" />
-            <Rocket size={40} color="#0d6efd" />
-          </motion.div>
+            <motion.div
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="d-flex justify-content-center gap-4 mt-4 gs-hero-icons"
+            >
+              <Cpu size={40} color="#0d6efd" />
+              <Sparkles size={40} color="#0d6efd" />
+              <Rocket size={40} color="#0d6efd" />
+            </motion.div>
+          </div>
         </div>
       </Parallax>
 
@@ -57,12 +57,12 @@ export default function GetStarted() {
           Start Your AI Journey in <span style={{ color: '#0d6efd' }}>3 Simple Steps</span>
         </motion.h2>
 
-        <Row className="g-4">
+        <Row className="g-4 align-items-stretch">
           <Col md={4}>
             <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 40 }} transition={{ duration: 0.8 }}>
               <Card style={{ backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: 18 }} className="shadow-sm h-100">
                 <Card.Body>
-                  <BookOpen size={36} style={{ color: '#0d6efd' }} className="mb-3" />
+                  <div className="gs-card-icon mb-3"><BookOpen size={36} style={{ color: '#0d6efd' }} /></div>
                   <Card.Title>1. Learn the Basics</Card.Title>
                   <Card.Text className="text-muted">Understand core AI concepts: machine learning, neural networks, prompts, and tools.</Card.Text>
                 </Card.Body>
@@ -74,7 +74,7 @@ export default function GetStarted() {
             <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 40 }} transition={{ duration: 0.9 }}>
               <Card style={{ backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: 18 }} className="shadow-sm h-100">
                 <Card.Body>
-                  <MousePointerClick size={36} style={{ color: '#0d6efd' }} className="mb-3" />
+                  <div className="gs-card-icon mb-3"><MousePointerClick size={36} style={{ color: '#0d6efd' }} /></div>
                   <Card.Title>2. Use AI Tools</Card.Title>
                   <Card.Text className="text-muted">Try text generation, image creation, chatbots, and smart assistants with zero coding.</Card.Text>
                 </Card.Body>
@@ -86,7 +86,7 @@ export default function GetStarted() {
             <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 40 }} transition={{ duration: 1 }}>
               <Card style={{ backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: 18 }} className="shadow-sm h-100">
                 <Card.Body>
-                  <Rocket size={36} style={{ color: '#0d6efd' }} className="mb-3" />
+                  <div className="gs-card-icon mb-3"><Rocket size={36} style={{ color: '#0d6efd' }} /></div>
                   <Card.Title>3. Build Projects</Card.Title>
                   <Card.Text className="text-muted">Create real-world AI apps — content bots, chatbots, automation tools, and more.</Card.Text>
                 </Card.Body>
@@ -99,12 +99,24 @@ export default function GetStarted() {
       </Container>
 
       <Parallax bgImage="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80" strength={350}>
-        <div style={{ minHeight: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3rem', color: '#fff', textAlign: 'center' }}>
-          <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="h2 fw-bold" style={{ textShadow: '0 6px 18px rgba(0,0,0,0.45)' }}>Ready to Begin?</motion.h2>
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} style={{ maxWidth: 760, marginTop: '1rem', opacity: 0.95 }}>Your AI learning path starts now — no experience needed.</motion.p>
-          <a href="/" className="btn btn-lg btn-primary mt-4">Start Learning →</a>
+        <div className="gs-cta d-flex">
+          <div className="container text-center py-5">
+            <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="h2 fw-bold text-white" style={{ textShadow: '0 6px 18px rgba(0,0,0,0.45)' }}>Ready to Begin?</motion.h2>
+            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="text-white-75 mx-auto" style={{ maxWidth: 760, marginTop: '1rem' }}>Your AI learning path starts now — no experience needed.</motion.p>
+            <a href="/tutorials" className="btn btn-lg btn-primary mt-4">Start Learning →</a>
+          </div>
         </div>
       </Parallax>
+
+      <style>{`
+        .gs-hero { min-height: 75vh; display:flex; align-items:center; }
+        .gs-hero .hero-inner { padding: 3rem 1rem; }
+        .gs-hero-icons svg { opacity: 0.95; }
+        .gs-card-icon { display:flex; align-items:center; justify-content:center; height:48px; }
+        .gs-cta { min-height: 50vh; display:flex; align-items:center; }
+        .text-white-75 { color: rgba(255,255,255,0.9); }
+        @media (max-width: 767px) { .gs-hero .hero-inner { padding: 2rem 1rem; } }
+      `}</style>
     </div>
   );
 }
