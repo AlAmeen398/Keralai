@@ -103,7 +103,7 @@ export default function GetStarted() {
           <div className="container text-center py-5">
             <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="h2 fw-bold text-white" style={{ textShadow: '0 6px 18px rgba(0,0,0,0.45)' }}>Ready to Begin?</motion.h2>
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="text-white-75 mx-auto" style={{ maxWidth: 760, marginTop: '1rem' }}>Your AI learning path starts now — no experience needed.</motion.p>
-            <a href="/tutorials" className="btn btn-lg btn-primary mt-4">Start Learning →</a>
+            <a href="/" className="btn btn-lg btn-primary mt-4">Start Learning →</a>
           </div>
         </div>
       </Parallax>
